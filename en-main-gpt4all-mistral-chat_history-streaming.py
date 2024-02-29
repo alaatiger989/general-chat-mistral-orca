@@ -1,26 +1,12 @@
 from deep_translator import GoogleTranslator
 import streamlit as st
-from langchain.prompts import PromptTemplate
-from langchain.callbacks.manager import CallbackManager
-from langchain.callbacks.base import BaseCallbackHandler
-from huggingface_hub import hf_hub_download
 
-from langchain_community.llms import LlamaCpp
 import gpt4all
 from gpt4all import GPT4All
 from deep_translator import GoogleTranslator
 import asyncio
 import sys
-from langchain.chains import LLMChain
-from langchain.memory import ConversationBufferMemory
-from langchain_experimental.chat_models import Llama2Chat
 
-from langchain.prompts.chat import (
-    ChatPromptTemplate,
-    HumanMessagePromptTemplate,
-    MessagesPlaceholder,
-)
-from langchain.schema import SystemMessage
 
 
 @st.cache_resource
