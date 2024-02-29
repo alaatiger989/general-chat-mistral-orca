@@ -11,7 +11,7 @@ import sys
 
 @st.cache_resource
 def create_chain():
-    model = GPT4All(device = 'gpu' , model_name = "alaa_ai_model_mistral_v1.9.gguf" , model_path ='C:/Users/Alaa AI/Python Projects/Ai Models/' , allow_download = False , n_ctx = 2048)
+    model = GPT4All(device = 'gpu' , model_name = "alaa_ai_model_mistral_v1.9.gguf" , model_path ='/workspaces/general-chat-mistral-orca' , allow_download = False , n_ctx = 2048)
     st.markdown("Model Loaded Successfully....")
     return model
 
